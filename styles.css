@@ -1,9 +1,7 @@
 body {
   background-color: rgb(246, 246, 173);
 }
-div {
-  display: inline-block;
-}
+
 /* Primer div para empezar a estructurar el layout */
 .padre {
   position: absolute;
@@ -45,7 +43,7 @@ div {
   border-bottom-right-radius: 76px;
   border: 3px solid #656565;
 }
-
+/* Elementos que se encuentran dentro de la base de la pantalla */
 .luz-bateria {
   position: absolute;
   height: 60px;
@@ -63,6 +61,16 @@ div {
   top: 45px;
   left: 50px;
 }
+.pantalla-encabezado {
+  position: absolute;
+  height: 25px;
+  width: 420px;
+  background-image: url(img/stereosound.png);
+  background-repeat: no-repeat;
+  top: 10px;
+  left: 20px;
+}
+/* Elementos del bloque central de la consola */
 .boton-a {
   position: absolute;
   height: 55px;
@@ -118,6 +126,15 @@ div {
   background-color: #1d0515;
   border-radius: 10px;
 }
+.logo {
+  position: absolute;
+  top: 400px;
+  left: 42px;
+  width: 285px;
+  height: 50px;
+  background-image: url(img/logogameboy3.png);
+}
+/* Elementos de la parte inferior de la consola */
 .start {
   position: absolute;
   height: 15px;
@@ -160,13 +177,7 @@ div {
   left: 157px;
   transform: rotate(3deg);
 }
-#pantalla-encabezado-top-left {
-  display: inline-block;
-  position: absolute;
-  width: 50px;
-  left: 125px;
-  top: 80px;
-}
+
 .altavoces {
   position: absolute;
 
@@ -233,21 +244,4 @@ div {
   left: 365px;
   transform: rotate(50deg);
   border: 1px solid #656565;
-}
-.logo {
-  position: absolute;
-  top: 400px;
-  left: 42px;
-  width: 285px;
-  height: 50px;
-  background-image: url(img/logogameboy3.png);
-}
-.pantalla-encabezado {
-  position: absolute;
-  height: 25px;
-  width: 420px;
-  background-image: url(img/stereosound.png);
-  background-repeat: no-repeat;
-  top: 10px;
-  left: 20px;
 }
