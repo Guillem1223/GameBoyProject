@@ -1,0 +1,253 @@
+body {
+  background-color: rgb(246, 246, 173);
+}
+div {
+  display: inline-block;
+}
+/* Primer div para empezar a estructurar el layout */
+.padre {
+  position: absolute;
+  height: 800px;
+  width: 500px;
+  left: 500px;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* base estructura de la consola */
+.base {
+  position: absolute;
+  bottom: 100px;
+  height: 100%;
+  width: 100%;
+  background-color: #e9e7e4;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 120px;
+  box-shadow: inset 0 -4px 16px 0 rgb(0 0 0 / 5%),
+    0 40px 60px 0px rgb(0 0 0 / 60%);
+  display: flex;
+  justify-content: center;
+}
+/* div padre de todo lo que veremos en la seccion pantalla, esta es un hijo de la estructura principal .base */
+.pantalla {
+  position: absolute;
+  background-color: #73738a;
+  width: 400px;
+  height: 340px;
+  top: 50px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 76px;
+  border: 3px solid #656565;
+}
+
+.luz-bateria {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background-image: url(img/bateria.png);
+  background-repeat: no-repeat;
+  top: 100px;
+}
+
+.screen {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  background-color: #9aa13c;
+  top: 45px;
+  left: 50px;
+}
+.boton-a {
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  background-color: #8b082c;
+  border-radius: 100%;
+  top: 500px;
+  left: 400px;
+  border: 2px solid #656565;
+}
+.foto-a {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-image: url(img/boton-a.png);
+  top: 559px;
+  left: 428px;
+}
+.boton-b {
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  background-color: #8b082c;
+  border-radius: 100%;
+  top: 530px;
+  left: 330px;
+  border: 2px solid #656565;
+}
+.foto-b {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-image: url(img/boton-b.png);
+  background-repeat: no-repeat;
+  top: 595px;
+  left: 357px;
+}
+.boton-updown {
+  position: absolute;
+  width: 30px;
+  height: 95px;
+  top: 490px;
+  right: 397px;
+  background-color: #1d0515;
+  border-radius: 10px;
+}
+.boton-lr {
+  position: absolute;
+  width: 95px;
+  height: 30px;
+  top: 522px;
+  right: 365px;
+  background-color: #1d0515;
+  border-radius: 10px;
+}
+.start {
+  position: absolute;
+  height: 15px;
+  width: 70px;
+  transform: rotate(160deg);
+  background-color: #6e6b75;
+  top: 670px;
+  left: 250px;
+  border-radius: 20px;
+  border: 2px solid rgb(55, 55, 55);
+}
+.start-letras {
+  position: absolute;
+  width: 72px;
+  height: 50px;
+  background-image: url(img/start.png);
+  background-repeat: no-repeat;
+  top: 672px;
+  left: 260px;
+  transform: rotate(3deg);
+}
+.select {
+  position: absolute;
+  height: 15px;
+  width: 70px;
+  transform: rotate(160deg);
+  background-color: #6e6b75;
+  top: 670px;
+  left: 150px;
+  border-radius: 20px;
+  border: 2px solid rgb(55, 55, 55);
+}
+.select-letras {
+  position: absolute;
+  width: 75px;
+  height: 60px;
+  background-image: url(img/select.png);
+  background-repeat: no-repeat;
+  top: 680px;
+  left: 157px;
+  transform: rotate(3deg);
+}
+#pantalla-encabezado-top-left {
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  left: 125px;
+  top: 80px;
+}
+.altavoces {
+  position: absolute;
+
+  width: 194px;
+  height: 120px;
+  left: 40px;
+}
+.altavoz1 {
+  position: absolute;
+  width: 90px;
+  height: 10px;
+  background-color: #cec9c2;
+  top: 730px;
+  left: 290px;
+  transform: rotate(50deg);
+  border: 1px solid #656565;
+}
+.altavoz2 {
+  position: absolute;
+  width: 90px;
+  height: 10px;
+  background-color: #cec9c2;
+  top: 717px;
+  left: 305px;
+  transform: rotate(50deg);
+  border: 1px solid #656565;
+}
+.altavoz3 {
+  position: absolute;
+  width: 90px;
+  height: 10px;
+  background-color: #cec9c2;
+  top: 704px;
+  left: 320px;
+  transform: rotate(50deg);
+  border: 1px solid #656565;
+}
+.altavoz4 {
+  position: absolute;
+  width: 90px;
+  height: 10px;
+  background-color: #cec9c2;
+  top: 691px;
+  left: 335px;
+  transform: rotate(50deg);
+  border: 1px solid #656565;
+}
+.altavoz5 {
+  position: absolute;
+  width: 90px;
+  height: 10px;
+  background-color: #cec9c2;
+  top: 678px;
+  left: 350px;
+  transform: rotate(50deg);
+  border: 1px solid #656565;
+}
+.altavoz6 {
+  position: absolute;
+  width: 90px;
+  height: 10px;
+  background-color: #cec9c2;
+  top: 665px;
+  left: 365px;
+  transform: rotate(50deg);
+  border: 1px solid #656565;
+}
+.logo {
+  position: absolute;
+  top: 400px;
+  left: 42px;
+  width: 285px;
+  height: 50px;
+  background-image: url(img/logogameboy3.png);
+}
+.pantalla-encabezado {
+  position: absolute;
+  height: 25px;
+  width: 420px;
+  background-image: url(img/stereosound.png);
+  background-repeat: no-repeat;
+  top: 10px;
+  left: 20px;
+}
